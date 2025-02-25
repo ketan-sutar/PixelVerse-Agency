@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import gsap from "gsap";
 import Hello from "../Hello"; // Import the main component after loading
 import loadingTexts from "../Loader/LoadinText"; // Import text data
+import Header from "../Pages/Header";
 
 const Loader = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -55,7 +56,7 @@ const Loader = () => {
       });
   };
 
-  return loadingComplete ? <Hello /> : (
+  return loadingComplete ? <Header/> : (
     <div className="w-screen h-screen flex justify-center items-center bg-[#f0f8ff] relative">
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="absolute h-[4px] w-0 left-0 z-10 bg-gradient-to-r from-pink-400 to-purple-500 rounded follow"></div>
