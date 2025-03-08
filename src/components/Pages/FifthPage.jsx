@@ -2,83 +2,108 @@ import React from "react";
 
 export const FifthPage = () => {
   return (
-    <section className="w-full min-h-screen bg-white flex flex-col items-center px-10 py-10">
-      {/* Top Section */}
-      <div className="w-full max-w-6xl flex">
-        {/* Left Text Content */}
-        <div className="w-1/2 pr-10">
-          <h1 className="text-4xl font-bold text-black mb-4">
-            We provide cutting-edge digital
+    <>
+      <section className="w-full h-auto]">
+        {/* top section */}
+        <section className="w-full h-auto py-10 ">
+          {/* Title */}
+          <h1 className="text-4xl font-bold text-center mb-12">
+            Pixel Perfect
           </h1>
-          <p className="text-gray-700 mb-6">
-            Empower artists to showcase their work globally.
-          </p>
-          <div className="border-l-2 border-black pl-4">
-            <p className="text-gray-700">
-              From stunning websites to interactive digital exhibits.
-            </p>
-            <div className="mt-4">
-              <p className="font-medium">2022</p>
-              <p className="font-medium">2023</p>
+
+          <div className="flex flex-col lg:flex-row items-center justify-between px-12">
+            {/* Left Section */}
+            <div className="lg:w-[40%] text-left">
+              <h3 className="text-2xl font-semibold mb-[5vw]">
+                Bringing ideas to life with <br /> stunning visuals
+              </h3>
+
+              {/* Timeline */}
+              <div className="pl-3 w-[60%]">
+                <div className="mb-6 border-t-2 py-3 border-black">
+                  <p className="text-lg font-light">
+                    Transformed ideas into visually stunning digital
+                    experiences.{" "}
+                  </p>
+                </div>
+
+                <div className="mt-6 border-t-2 py-3 border-black">
+                  <p className="text-lg font-light">
+                    Expanded into futuristic design and AI-driven experiences
+                    for enhanced engagement.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Section (Images) */}
+            <div className="lg:w-[60%] grid grid-cols-3 gap-6 mt-8 lg:mt-0">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Artistic Design"
+                className=" w-full h-[350px] rounded-2xl object-cover bg-black"
+              />
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Digital Artwork"
+                className="w-full h-[350px] rounded-2xl object-cover bg-black"
+              />
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Abstract Art"
+                className="w-full h-[350px] rounded-2xl object-cover bg-black"
+              />
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Right Image Grid */}
-        <div className="w-1/2 grid grid-cols-3 gap-4">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Art"
-            className="rounded-xl"
-          />
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Art"
-            className="rounded-xl"
-          />
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Art"
-            className="rounded-xl"
-          />
-        </div>
-      </div>
+        {/* bottom section */}
 
-      {/* Bottom Section */}
-      <div className="w-full max-w-6xl flex mt-10">
-        {/* Left Image Grid */}
-        <div className="w-1/2 grid grid-cols-3 gap-4">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Art"
-            className="rounded-xl"
-          />
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Art"
-            className="rounded-xl"
-          />
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Art"
-            className="rounded-xl"
-          />
-        </div>
+        <section className="w-full h-auto  flex">
+          <div className="w-full h-auto flex">
+            {/* left img prt */}
+            <div className="lg:w-[60%] grid grid-cols-3 gap-6 mt-8 lg:mt-0">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Artistic Design"
+                className=" w-full h-[300px] rounded-2xl object-cover bg-black"
+              />
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Digital Artwork"
+                className="w-full h-[300px] rounded-2xl object-cover bg-black"
+              />
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Abstract Art"
+                className="w-full h-[300px] rounded-2xl object-cover bg-black"
+              />
+            </div>
 
-        {/* Right Text Content */}
-        <div className="w-1/2 pl-10">
-          <h2 className="text-2xl font-semibold text-black mb-4">
-            Our innovative solutions are designed
-          </h2>
-          <p className="text-gray-700 mb-6">
-            We designed to enhance your artistic journey & connect a wider
-            audience.
-          </p>
-          <a href="#" className="text-black font-medium mt-4 inline-block">
-            Explore All →
-          </a>
-        </div>
-      </div>
-    </section>
+            {/* right text prt */}
+
+            <div className="lg:w-[40%] flex flex-col items-center justify-center text-left">
+              <h3 className="text-2xl font-semibold mb-[5vw]">
+                Revolutionizing Digital Experiences
+              </h3>
+
+              {/* Timeline */}
+              <div className=" w-[60%]">
+                <div className="mb-6 ">
+                  <p className="text-lg font-light">
+                    We craft experiences that elevate your artistic journey &
+                    engage a wider audience.
+                  </p>
+                </div>
+
+                <div className="mt-6">
+                  <button>Explore All</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </>
   );
 };

@@ -5,6 +5,7 @@ import SecondPage from "./SecondPage";
 import ThirdPage from "./ThirdPage";
 import FourthPage from "./FourthPage";
 import { FifthPage } from "./FifthPage";
+import SixthPage from "./SixthPage";
 
 const Header = () => {
   return (
@@ -15,6 +16,7 @@ const Header = () => {
       <ThirdPage/>
       <FourthPage/>
       <FifthPage/>
+      <SixthPage/>
 
 
     </>
