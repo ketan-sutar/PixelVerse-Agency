@@ -15,6 +15,7 @@
     "@material-tailwind/react": "^2.1.10",
     "framer-motion": "^12.5.0",
     "gsap": "^3.12.7",
+    "lenis": "^1.2.3",
     "lucide-react": "^0.479.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

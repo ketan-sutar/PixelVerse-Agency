@@ -5,8 +5,9 @@ import SecondPage from "./SecondPage";
 import ThirdPage from "./ThirdPage";
 import FourthPage from "./FourthPage";
 import { FifthPage } from "./FifthPage";
-import SixthPage from "./SixthPage";
+// import SixthPage from "./SixthPage";
 import LastPage from "./LastPage";
+import FooterPart from "../Footer/FooterPart";
 
 const Header = () => {
   return (
@@ -17,8 +18,10 @@ const Header = () => {
       <ThirdPage/>
       <FourthPage/>
       <FifthPage/>
-      {/* <SixthPage/> */}
-      <LastPage/>
+      {/* images add kr ntr use kr ha part */}
+      {/* <LastPage/> */}
+      <FooterPart/>
+
 
 
     </>
