@@ -19,7 +19,7 @@ const Header = () => {
       <FourthPage/>
       <FifthPage/>
       {/* images add kr ntr use kr ha part */}
-      {/* <LastPage/> */}
+      <LastPage/>
       <FooterPart/>
 
 

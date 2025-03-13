@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-const InfiniteScroller = ({ items, speed }) => {
+const InfiniteScroller = ({ items, speed = 10 }) => {
   const controls = useAnimation(); // 🔥 Animation controller
 
-  const startAnimation = () => {
+  useEffect(() => {
     controls.start({
       x: ["0%", "-100%"],
       transition: {
@@ -13,14 +13,10 @@ const InfiniteScroller = ({ items, speed }) => {
         duration: speed,
       },
     });
-  };
+  }, [controls, speed]); // ✅ Start animation when component mounts
 
   return (
-    <div 
-      className="overflow-hidden whitespace-nowrap w-full relative"
-      onMouseEnter={() => controls.stop()} // 🔥 Pause on hover
-      onMouseLeave={startAnimation} // 🔥 Resume without restart
-    >
+    <div className="overflow-hidden whitespace-nowrap w-full relative">
       <motion.div 
         className="flex space-x-4 w-max"
         animate={controls} // Use animation controller

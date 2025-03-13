@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-[4.5vw] py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl font-bold">PɪxᴇʟVᴇʀsᴇ</div>
 

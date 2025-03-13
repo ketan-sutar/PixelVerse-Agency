@@ -3,7 +3,7 @@ import React from "react";
 export const FifthPage = () => {
   return (
     <>
-      <section className="w-full h-auto]">
+      <section className="w-full h-auto px-[5vw]">
         {/* top section */}
         <section className="w-full h-auto py-10 ">
           {/* Title */}
@@ -11,7 +11,7 @@ export const FifthPage = () => {
             Pixel Perfect
           </h1>
 
-          <div className="flex flex-col lg:flex-row items-center justify-between px-12">
+          <div className="flex flex-col lg:flex-row items-center justify-between px-1">
             {/* Left Section */}
             <div className="lg:w-[40%] text-left">
               <h3 className="text-2xl font-semibold mb-[5vw]">
@@ -19,7 +19,7 @@ export const FifthPage = () => {
               </h3>
 
               {/* Timeline */}
-              <div className="pl-3 w-[60%]">
+              <div className="pl-1 w-[60%]">
                 <div className="mb-6 border-t-2 py-3 border-black">
                   <p className="text-lg font-light">
                     Transformed ideas into visually stunning digital
@@ -39,19 +39,19 @@ export const FifthPage = () => {
             {/* Right Section (Images) */}
             <div className="lg:w-[60%] grid grid-cols-3 gap-6 mt-8 lg:mt-0">
               <img
-                src="https://via.placeholder.com/300"
+                src="/public/images/4.1img.jpg"
                 alt="Artistic Design"
-                className=" w-full h-[350px] rounded-2xl object-cover bg-black"
+                className=" w-full h-[350px] rounded-2xl object-cover "
               />
               <img
-                src="https://via.placeholder.com/300"
+                src="/public/images/4.2img.jpg"
                 alt="Digital Artwork"
-                className="w-full h-[350px] rounded-2xl object-cover bg-black"
+                className="w-full h-[350px] rounded-2xl object-cover "
               />
               <img
-                src="https://via.placeholder.com/300"
+                src="/public/images/4.3img.jpg"
                 alt="Abstract Art"
-                className="w-full h-[350px] rounded-2xl object-cover bg-black"
+                className="w-full h-[350px] rounded-2xl object-cover "
               />
             </div>
           </div>
@@ -64,19 +64,19 @@ export const FifthPage = () => {
             {/* left img prt */}
             <div className="lg:w-[60%] grid grid-cols-3 gap-6 mt-8 lg:mt-0">
               <img
-                src="https://via.placeholder.com/300"
+                src="/public/images/5.1img.jpg"
                 alt="Artistic Design"
-                className=" w-full h-[300px] rounded-2xl object-cover bg-black"
+                className=" w-full h-[300px] rounded-2xl object-cover "
               />
               <img
-                src="https://via.placeholder.com/300"
+                src="/public/images/5.2img.jpg"
                 alt="Digital Artwork"
-                className="w-full h-[300px] rounded-2xl object-cover bg-black"
+                className="w-full h-[300px] rounded-2xl object-cover "
               />
               <img
-                src="https://via.placeholder.com/300"
+                src="/public/images/5.3img.jpg"
                 alt="Abstract Art"
-                className="w-full h-[300px] rounded-2xl object-cover bg-black"
+                className="w-full h-[300px] rounded-2xl object-cover "
               />
             </div>
 

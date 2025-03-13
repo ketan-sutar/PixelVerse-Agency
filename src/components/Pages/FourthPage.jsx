@@ -2,7 +2,7 @@ import React from "react";
 
 const FourthPage = () => {
   return (
-    <section className="w-full min-h-[80vh] bg-white flex flex-col px-10">
+    <section className="w-full min-h-[80vh] bg-white flex flex-col px-[5vw]">
       {/* Heading at the Top (Aligned Left) */}
       <div className="w-full">
         <h1 className="text-4xl font-bold text-black self-start mb-8">
@@ -15,7 +15,7 @@ const FourthPage = () => {
         {/* Left Side - Image */}
         <div className="w-1/2">
           <img
-            src="https://via.placeholder.com/500"
+            src="/public/images/3img.jpg"
             alt="Artistic Design"
             className="w-auto h-[70vh] rounded-2xl object-cover bg-black"
           />

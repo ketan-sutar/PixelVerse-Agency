@@ -1,42 +1,43 @@
 import React from "react";
-
 import InfiniteScroller from "./InfiniteScroller";
 
 const InfiniteScroll = () => {
   const imageFiles = [
-    "img_1.jpg",
-    "img_2.jpg",
-    "img_3.jpg",
-    "img_4.jpg",
-    
+    "/slideimages/slide1.jpg",
+    "/slideimages/slide2.jpg",
+    "/slideimages/slide3.jpg",
+    "/slideimages/slide4.jpg",
+    "/slideimages/slide5.jpg",
+
+    "/slideimages/slide7.jpg",
+    "/slideimages/slide8.jpg",
+    "/slideimages/slide9.jpg",
+    "/slideimages/slide10.jpg",
+    "/slideimages/slide11.jpg",
+
+    "/slideimages/slide15.jpg",
   ];
 
   return (
-    <div className="flex flex-col items-center space-y-8">
-      <h1 className="text-center text-white text-2xl font-bold">
-        Infinite Scroll with Framer Motion
-      </h1>
-
-      {/* Text Scroller */}
-      <InfiniteScroller
-        items={["HTML", "CSS", "JS", "React", "Framer Motion", "Animation"]}
-        speed={10}
-      />
-
-      {/* Image Scroller from Public Folder */}
-      <InfiniteScroller
-        items={imageFiles.map((file, index) => (
-          <img
-            key={index}
-            src={`/images/${file}`} // Use public folder path
-            alt=""
-            className="w-full max-w-xs h-auto rounded-lg"
-
-          />
-        ))}
-        speed={15}
-      />
-    </div>
+    <>
+    <h1
+    className="text-4xl font-bold text-center text-gray-800 mt-8 mb-5"
+    >Dreamscapes in Motion</h1>
+      <div className="flex flex-col items-center space-y-8">
+        {/* Image Scroller */}
+        <InfiniteScroller
+          items={imageFiles.map((file, index) => (
+            <img
+              key={index}
+              src={file} // Corrected path
+              alt={`Slide ${index + 1}`}
+              className="w-full max-w-xs h-auto rounded-lg"
+            />
+          ))}
+          speed={55}
+        />
+      </div>
+    </>
   );
 };
 
