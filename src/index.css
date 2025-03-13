@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+#EDC7B7 - Soft Peach
+#EEE2DC - Light Beige
+#BAB2B5 - Muted Gray
+#123C69 - Deep Navy Blue
+#AC3B61 - Rich Magenta */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
