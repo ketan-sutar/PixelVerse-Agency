@@ -3,7 +3,15 @@ import React from "react";
 const MainPage = () => {
   return (
     <>
-      <div className="flex flex-col items-center  justify-center min-h-[90vh]  text-black">
+      <div className="
+      sm:bg-green-300
+      md:bg-blue-300
+      lg:bg-red-300
+      xl:bg-yellow-300
+      2xl:bg-pink-300
+      
+      
+      flex flex-col items-center  justify-center min-h-[90vh]  text-black">
         <div className="flex flex-col items-center">
           <div className="flex items-center">
             <h1 className="2xl:text-[12vw] font-serif font-normal tracking-tight">

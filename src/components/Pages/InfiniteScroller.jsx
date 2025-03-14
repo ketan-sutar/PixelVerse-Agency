@@ -1,32 +1,54 @@
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
+import React, { useRef } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Icons for buttons
 
-const InfiniteScroller = ({ items, speed = 10 }) => {
-  const controls = useAnimation(); // 🔥 Animation controller
+const InfiniteScroller = ({ items }) => {
+  const scrollRef = useRef(null);
 
-  useEffect(() => {
-    controls.start({
-      x: ["0%", "-100%"],
-      transition: {
-        ease: "linear",
-        repeat: Infinity,
-        duration: speed,
-      },
-    });
-  }, [controls, speed]); // ✅ Start animation when component mounts
+  // Scroll left
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
+
+  // Scroll right
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
 
   return (
-    <div className="overflow-hidden whitespace-nowrap w-full relative">
-      <motion.div 
-        className="flex space-x-4 w-max"
-        animate={controls} // Use animation controller
+    <div className="relative w-full">
+      {/* Left Scroll Button */}
+      <button
+        onClick={scrollLeft}
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-600"
       >
-        {[...items, ...items].map((item, index) => (
-          <div key={index} className="flex-shrink-0">
-            {item}
-          </div>
-        ))}
-      </motion.div>
+        <FaChevronLeft size={20} />
+      </button>
+
+      {/* Scrollable Container */}
+      <div
+        ref={scrollRef}
+        className="w-full overflow-x-auto flex scrollbar-hide scroll-smooth snap-x snap-mandatory px-10"
+      >
+        <div className="flex gap-x-4">
+          {items.map((item, index) => (
+            <div key={index} className="flex-shrink-0 snap-start">
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Right Scroll Button */}
+      <button
+        onClick={scrollRight}
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-600"
+      >
+        <FaChevronRight size={20} />
+      </button>
     </div>
   );
 };

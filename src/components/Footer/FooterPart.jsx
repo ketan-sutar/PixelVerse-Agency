@@ -1,8 +1,9 @@
 import React from "react";
+import ExploreButton from "./ExploreButton";
 
 const FooterPart = () => {
   return (
-    <footer className="w-full h-auto flex flex-col justify-center items-center   text-black ">
+    <footer className="w-full h-[90vh] flex flex-col justify-center items-center text-black">
       {/* Top Section - Title */}
       <div className="text-center pt-[2vw] px-32">
         <h1 className="text-2xl md:text-4xl font-semibold max-w-3xl mx-auto leading-snug">
@@ -11,26 +12,15 @@ const FooterPart = () => {
         </h1>
       </div>
 
-      {/* Middle Section - explore noew button */}
-      <div className="mt-[2vw] border">
-        <div className="relative border-b border-gray-400 w-full md:w-96">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="w-full bg-transparent py-2 text-white placeholder-gray-400 focus:outline-none"
-          />
-          <button className="absolute right-0 top-1/2 -translate-y-1/2 text-white hover:text-lime-400 transition duration-300">
-            ➝
-          </button>
-        </div>
+      {/* Middle Section - Explore Now Button */}
+      <div className="mt-[2vw] mb-3">
+        <ExploreButton/>
       </div>
 
       {/* Bottom Section - Brand Name */}
-      <div className="flex flex-col items-center mt-[1vw]">
-        <p className="text-sm text-gray-900 mb-1">
-          "Where AI Meets Creativity"
-        </p>
-        <h1 className="text-[17vw] font-bold tracking-tighter uppercase">
+      <div className="flex flex-col items-center">
+        <p className="text-[1.2vw] text-gray-900 mb-1">"Where AI Meets Creativity"</p>
+        <h1 className="text-[20vw] font-semibold tracking-tighter uppercase leading-none">
           PIXELVERSE
         </h1>
       </div>
@@ -39,22 +29,25 @@ const FooterPart = () => {
       <div className="w-full flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm mt-1 px-[2vw]">
         {/* Navigation Links */}
         <nav className="flex space-x-6">
-          <a href="#" className="hover:text-white">
-            Templates
+          <a href="#" className="hover:text-red-500">
+            Shop
           </a>
-          <a href="#" className="hover:text-white">
-            Tools
+          <a href="#" className="hover:text-red-500">
+            Visit
           </a>
-          <a href="#" className="hover:text-white">
-            Features
-          </a>
-          <a href="#" className="hover:text-white">
+          <a href="#" className="hover:text-red-500">
             About Us
+          </a>
+          <a href="#" className="hover:text-red-500">
+            News & Media
+          </a>
+          <a href="#" className="hover:text-red-500">
+            Our Tools
           </a>
         </nav>
 
         {/* Copyright Text */}
-        <div className="text-xs text-gray-500 mt-2 md:mt-0">
+        <div className="text-xs text-gray-500 mt-2 mb-2">
           © 2024 PixelVerse. All Rights Reserved.
         </div>
       </div>
