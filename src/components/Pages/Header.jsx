@@ -12,14 +12,14 @@ import FooterPart from "../Footer/FooterPart";
 const Header = () => {
   return (
     <>
-      <Navbar />
-      {/* <MainPage /> */}
+      {/* <Navbar /> */}
+      <MainPage />
       <SecondPage/>
-      {/* <ThirdPage/>
-      <FourthPage/>
-      <FifthPage/>
-      <LastPage/>
-      <FooterPart/> */}
+       <ThirdPage/>
+      {/* <FourthPage/> */}
+      {/* <FifthPage/> */}
+      {/* <LastPage/> */}
+      {/* <FooterPart/>  */}
 
 
 

@@ -32,26 +32,20 @@ const SecondPage = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row px-[5vw] min-h-auto py-5 
+      className="flex flex-col lg:flex-row px-[5vw] h-[80vh] py-5 
     
-    bg-green-600
-    sm:bg-red-200
-    md:bg-blue-300
-    lg:bg-orange-900  lg:px-[5vw] 
-    xl:bg-pink-400
-    2xl:bg-violet-700
     
+      lg:px-[5vw] 
+      xl:flex xl:justify-center
     
     text-black gap-4"
     >
       {/* Right: Category List (On top for mobile, left for larger screens) */}
       <div
-        className="bg-red-200 
-      sm:bg-red-600
-    md:bg-blue-800
-    lg:bg-pink-50
-    xl:bg-pink-100
-    2xl:bg-violet-700
+        className="
+      
+     xl:flex 
+     2xl:h-auto 2xl:w-auto 2xl:ml-5
       
       flex flex-col items-center lg:items-end
       lg:ml-[1vw]
@@ -83,7 +77,9 @@ const SecondPage = () => {
             
             sm:w-[40vw] sm:h-[50vw]
              md:w-[28vw]  md:h-[40vw]
-             lg:w-[23vw]   lg:h-[35vw]
+             lg:w-[23vw]   lg:h-[30vw]
+             xl:w-[24vw] xl:h-[28vw]
+             2xl:w-[24vw] 2xl:h-[28vw]
               rounded-2xl object-cover transition-transform duration-300 hover:scale-105"
           />
         ))}
