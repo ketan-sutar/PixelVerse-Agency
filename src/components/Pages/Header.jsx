@@ -13,14 +13,13 @@ const Header = () => {
   return (
     <>
       <Navbar />
-      <MainPage />
+      {/* <MainPage /> */}
       <SecondPage/>
-      <ThirdPage/>
+      {/* <ThirdPage/>
       <FourthPage/>
       <FifthPage/>
-      {/* images add kr ntr use kr ha part */}
       <LastPage/>
-      <FooterPart/>
+      <FooterPart/> */}
 
 
 
