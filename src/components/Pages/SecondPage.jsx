@@ -11,17 +11,28 @@ const SecondPage = () => {
   }, []);
 
   const imagesets = {
-    nature: ["/images/nature1.jpg", "/images/nature2.jpg", "/images/nature3.jpg"],
+    nature: [
+      "/images/nature1.jpg",
+      "/images/nature2.jpg",
+      "/images/nature3.jpg",
+    ],
     ai: ["/images/ai1.jpg", "/images/ai2.jpeg", "/images/ai3.jpeg"],
-    handdrawn: ["/images/drawn1.jpg", "/images/drawn2.jpg", "/images/drawn3.jpg"],
+    handdrawn: [
+      "/images/drawn1.jpg",
+      "/images/drawn2.jpg",
+      "/images/drawn3.jpg",
+    ],
   };
 
   const getImagesToDisplay = () => {
-    return screenWidth < 768 ? imagesets[hoveredCategory].slice(0, 2) : imagesets[hoveredCategory];
+    return screenWidth < 768
+      ? imagesets[hoveredCategory].slice(0, 2)
+      : imagesets[hoveredCategory];
   };
 
   return (
-    <div className="flex flex-col lg:flex-row px-[5vw] min-h-auto py-5 
+    <div
+      className="flex flex-col lg:flex-row px-[5vw] min-h-auto py-5 
     
     bg-green-600
     sm:bg-red-200
@@ -31,9 +42,11 @@ const SecondPage = () => {
     2xl:bg-violet-700
     
     
-    text-black gap-4">
+    text-black gap-4"
+    >
       {/* Right: Category List (On top for mobile, left for larger screens) */}
-      <div className="bg-red-200 
+      <div
+        className="bg-red-200 
       sm:bg-red-600
     md:bg-blue-800
     lg:bg-pink-50
@@ -42,14 +55,19 @@ const SecondPage = () => {
       
       flex flex-col items-center lg:items-end
       lg:ml-[1vw]
-       text-lg font-sans order-1 ">
+       text-lg font-sans order-1 "
+      >
         {["nature", "ai", "handdrawn"].map((category) => (
           <p
             key={category}
             className="text-gray-400 text-lg hover:text-black hover:font-bold hover:before:content-['→'] hover:before:mr-2 transition-all duration-300 cursor-pointer"
             onMouseEnter={() => setHoveredCategory(category)}
           >
-            {category === "nature" ? "Nature Images" : category === "ai" ? "AI Images" : "Hand Draw"}
+            {category === "nature"
+              ? "Nature Images"
+              : category === "ai"
+              ? "AI Images"
+              : "Hand Draw"}
           </p>
         ))}
       </div>
