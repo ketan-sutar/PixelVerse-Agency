@@ -16,9 +16,9 @@ const Header = () => {
       <MainPage />
       <SecondPage/>
        <ThirdPage/>
-      {/* <FourthPage/> */}
-      {/* <FifthPage/> */}
-      {/* <LastPage/> */}
+      <FourthPage/>
+      <FifthPage/>
+      <LastPage/>
       {/* <FooterPart/>  */}
 
 

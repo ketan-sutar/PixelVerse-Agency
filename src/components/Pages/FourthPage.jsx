@@ -2,27 +2,27 @@ import React from "react";
 
 const FourthPage = () => {
   return (
-    <section className="w-full min-h-[80vh] bg-white flex flex-col px-[5vw]">
-      {/* Heading at the Top (Aligned Left) */}
-      <div className="w-full">
-        <h1 className="text-4xl font-bold text-black self-start mb-8">
+    <section className="w-full min-h-[80vh] flex flex-col px-[5vw] py-10">
+      {/* Heading at the Top */}
+      <div className="w-full mb-6">
+        <h1 className="text-3xl text-center sm:text-4xl font-bold text-black">
           Digital Expertise
         </h1>
       </div>
 
       {/* Main Content (Image + Text) */}
-      <div className="flex w-full max-w-6xl items-center">
+      <div className="flex flex-col md:flex-row items-center w-full max-w-6xl mx-auto gap-8">
         {/* Left Side - Image */}
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-start">
           <img
             src="/public/images/3img.jpg"
             alt="Artistic Design"
-            className="w-auto h-[70vh] rounded-2xl object-cover bg-black"
+            className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px] h-auto rounded-2xl object-cover"
           />
         </div>
 
         {/* Right Side - Text Content */}
-        <div className="w-1/2 pl-10">
+        <div className="w-full md:w-1/2 text-center md:text-left">
           <h3 className="text-xl font-semibold text-black">
             Step into the future of art with Dttio. We provide cutting-edge digital services.
           </h3>

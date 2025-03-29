@@ -17,24 +17,33 @@ const InfiniteScroll = () => {
   ];
 
   return (
-    <>
-      <h1 className="text-4xl font-bold text-center text-gray-800 mt-8 mb-5">
+    <section className="w-full px-4 sm:px-6 py-8 md:py-12">
+      {/* Title */}
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8 md:mb-12">
         Dreamscapes in Motion
       </h1>
-      <div className="flex flex-col items-center space-y-8">
+
+      {/* Image Scroller */}
+      <div className="w-full overflow-hidden">
         <InfiniteScroller
           items={imageFiles.map((file, index) => (
-            <div key={index} className="relative group w-auto max-w-xs">
-              {/* Image */}
-              <img
-                src={file.src}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-auto rounded-lg transition-transform duration-300 group-hover:scale-105"
-              />
-              
+            <div
+              key={index}
+              className="relative group mx-2 sm:mx-3 flex-shrink-0"
+            >
+              {/* Image Container - Responsive Width */}
+              <div className="w-[80vw] sm:w-[200px] md:w-[250px] lg:w-[350px] aspect-[4/3] overflow-hidden rounded-xl">
+                <img
+                  src={file.src}
+                  alt={file.text}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
+
               {/* Overlay */}
-              <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end">
-                <p className="text-white text-lg font-semibold w-full text-center py-3 translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-end p-4">
+                <p className="text-white text-xs sm:text-sm md:text-base font-medium w-full text-center transform translate-y-5 group-hover:translate-y-0 transition-transform duration-300">
                   {file.text}
                 </p>
               </div>
@@ -43,7 +52,7 @@ const InfiniteScroll = () => {
           speed={10}
         />
       </div>
-    </>
+    </section>
   );
 };
 

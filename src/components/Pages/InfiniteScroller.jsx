@@ -20,14 +20,6 @@ const InfiniteScroller = ({ items }) => {
 
   return (
     <div className="relative w-full">
-      {/* Left Scroll Button */}
-      <button
-        onClick={scrollLeft}
-        className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-600"
-      >
-        <FaChevronLeft size={20} />
-      </button>
-
       {/* Scrollable Container */}
       <div
         ref={scrollRef}
@@ -43,12 +35,6 @@ const InfiniteScroller = ({ items }) => {
       </div>
 
       {/* Right Scroll Button */}
-      <button
-        onClick={scrollRight}
-        className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-600"
-      >
-        <FaChevronRight size={20} />
-      </button>
     </div>
   );
 };
