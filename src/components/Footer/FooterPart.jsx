@@ -3,52 +3,57 @@ import ExploreButton from "./ExploreButton";
 
 const FooterPart = () => {
   return (
-    <footer className="w-full h-[90vh] flex flex-col justify-center items-center text-black">
-      {/* Top Section - Title */}
-      <div className="text-center pt-[2vw] px-32">
-        <h1 className="text-2xl md:text-4xl font-semibold max-w-3xl mx-auto leading-snug">
-          Unleash your imagination and explore a world where AI meets
-          creativity. Transform your ideas into reality with us!
-        </h1>
+    <footer className="w-full bg-gradient-to-br from-gray-900 to-black py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
+      {/* Background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-purple-900 opacity-10 blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-80 h-80 rounded-full bg-pink-900 opacity-10 blur-3xl"></div>
       </div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* Top Section - Title */}
+        <div className="text-center px-4 sm:px-6 lg:px-8 mb-16 md:mb-20">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 max-w-4xl mx-auto leading-tight md:leading-snug">
+            Unleash your imagination in a world where <span className="text-white">AI meets creativity</span>
+          </h1>
+        </div>
 
-      {/* Middle Section - Explore Now Button */}
-      <div className="mt-[2vw] mb-3">
-        <ExploreButton/>
-      </div>
+        {/* Middle Section - Explore Now Button */}
+        <div className="flex justify-center mb-20 md:mb-24 transform hover:scale-105 transition-transform duration-500">
+          <ExploreButton />
+        </div>
 
-      {/* Bottom Section - Brand Name */}
-      <div className="flex flex-col items-center">
-        <p className="text-[1.2vw] text-gray-900 mb-1">"Where AI Meets Creativity"</p>
-        <h1 className="text-[20vw] font-semibold tracking-tighter uppercase leading-none">
-          PIXELVERSE
-        </h1>
-      </div>
+        {/* Bottom Section - Brand Name */}
+        <div className="flex flex-col items-center mb-16 md:mb-20 group">
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-2 md:mb-4 font-mono tracking-widest">
+            WHERE AI MEETS CREATIVITY
+          </p>
+          <h1 className="text-7xl sm:text-8xl md:text-9xl font-bold tracking-tighter uppercase leading-none bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-pink-300 transition-all duration-700">
+            PIXELVERSE
+          </h1>
+        </div>
 
-      {/* Bottom Section - Navigation & Copyright */}
-      <div className="w-full flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm mt-1 px-[2vw]">
-        {/* Navigation Links */}
-        <nav className="flex space-x-6">
-          <a href="#" className="hover:text-red-500">
-            Shop
-          </a>
-          <a href="#" className="hover:text-red-500">
-            Visit
-          </a>
-          <a href="#" className="hover:text-red-500">
-            About Us
-          </a>
-          <a href="#" className="hover:text-red-500">
-            News & Media
-          </a>
-          <a href="#" className="hover:text-red-500">
-            Our Tools
-          </a>
-        </nav>
+        {/* Bottom Section - Navigation & Copyright */}
+        <div className="w-full flex flex-col md:flex-row items-center justify-between text-gray-400 border-t border-gray-800 pt-8">
+          {/* Navigation Links */}
+          <nav className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6 md:mb-0">
+            {['Shop', 'Visit', 'About Us', 'News & Media', 'Our Tools'].map((item) => (
+              <a 
+                href="#" 
+                key={item}
+                className="relative text-sm sm:text-base hover:text-white transition-colors duration-300 before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-gradient-to-r before:from-purple-400 before:to-pink-400 before:transition-all before:duration-300 hover:before:w-full"
+              >
+                {item}
+              </a>
+            ))}
+          </nav>
 
-        {/* Copyright Text */}
-        <div className="text-xs text-gray-500 mt-2 mb-2">
-          © 2024 PixelVerse. All Rights Reserved.
+          
+
+          {/* Copyright Text */}
+          <div className="text-xs sm:text-sm text-gray-500 font-mono">
+            © {new Date().getFullYear()} PIXELVERSE. ALL RIGHTS RESERVED.
+          </div>
         </div>
       </div>
     </footer>
