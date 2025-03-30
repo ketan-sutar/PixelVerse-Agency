@@ -21,13 +21,14 @@ const SecondPage = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row px-[8vw] h-auto py-10 lg:items-center text-black gap-8">
+    <div className="bg-[#0B0C10]
+    flex flex-col lg:flex-row px-[8vw] h-auto py-10 lg:items-center text-black gap-8">
       {/* Category List */}
       <div className="flex flex-col items-center lg:items-start lg:w-1/3">
         {["nature", "ai", "handdrawn"].map((category) => (
           <p
             key={category}
-            className={`text-gray-500 text-xl font-medium transition-all duration-300 cursor-pointer 
+            className={`text-white text-xl font-medium transition-all duration-300 cursor-pointer 
               ${hoveredCategory === category ? "text-black font-bold" : ""}`}
             onMouseEnter={() => setHoveredCategory(category)}
           >
@@ -38,21 +39,21 @@ const SecondPage = () => {
 
       {/* Image Gallery */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 w-full lg:w-2/3">
-        {getImagesToDisplay().map((image, index) => (
-          <div key={index} className="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4]">
-            <img
-              src={image}
-              alt={`${hoveredCategory} ${index + 1}`}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-              <span className="text-white font-medium text-sm sm:text-base">
-                {hoveredCategory} {index + 1}
-              </span>
-            </div>
-          </div>
-        ))}
-      </div>
+  {getImagesToDisplay().map((image, index) => (
+    <div 
+      key={index} 
+      className="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] group"
+    >
+      <img
+        src={image}
+        alt={`${hoveredCategory} ${index + 1}`}
+        className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#F1EFEC]/15  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"></div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };

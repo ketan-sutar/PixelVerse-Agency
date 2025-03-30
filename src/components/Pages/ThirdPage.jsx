@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 const ThirdPage = () => {
   return (
-    <section className="w-full py-16 sm:py-24 px-4 sm:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <section className="
+    bg-[#0B0C10]
+    w-full py-16 sm:py-24 px-4 sm:px-8 
+     text-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-center">
           {/* Left Side - Text Content */}
@@ -23,28 +26,18 @@ const ThirdPage = () => {
               Where visionary art converges with groundbreaking innovation to redefine creative possibilities in the digital realm.
             </p>
             
-            <motion.button
-              whileHover={{ 
-                scale: 1.05, 
-                boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.4)",
-                background: "linear-gradient(to right, #3b82f6, #8b5cf6)"
-              }}
-              whileTap={{ scale: 0.98 }}
-              className="px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium sm:font-semibold rounded-full inline-flex items-center gap-2 sm:gap-3 transition-all duration-300 mt-4"
-            >
-              <span>Explore All Works</span>
-              <motion.span 
-                animate={{ x: [0, 4, 0] }}
-                transition={{ 
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-                className="text-lg sm:text-xl"
-              >
-                ↗
-              </motion.span>
-            </motion.button>
+            <div className="mt-10">
+                <motion.button 
+                  whileHover={{ scale: 1.1, boxShadow: "0px 10px 20px rgba(0, 0, 255, 0.3)" }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center px-8 py-3 text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                >
+                  Explore More
+                  <svg className="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </motion.button>
+              </div>
           </motion.div>
 
           {/* Right Side - Image Grid */}

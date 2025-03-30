@@ -3,7 +3,7 @@ import ExploreButton from "./ExploreButton";
 
 const FooterPart = () => {
   return (
-    <footer className="w-full bg-gradient-to-br from-gray-900 to-black py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
+    <footer className="w-full bg-[#0B0C10] py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-purple-900 opacity-10 blur-3xl"></div>

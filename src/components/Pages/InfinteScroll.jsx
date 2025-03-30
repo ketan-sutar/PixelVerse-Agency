@@ -19,7 +19,7 @@ const InfiniteScroll = () => {
   return (
     <section className="w-full px-4 sm:px-6 py-8 md:py-12">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8 md:mb-12">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[#93C5FD] mb-8 md:mb-12">
         Dreamscapes in Motion
       </h1>
 
