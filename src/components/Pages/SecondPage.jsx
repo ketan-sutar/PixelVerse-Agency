@@ -11,77 +11,46 @@ const SecondPage = () => {
   }, []);
 
   const imagesets = {
-    nature: [
-      "/images/nature1.jpg",
-      "/images/nature2.jpg",
-      "/images/nature3.jpg",
-    ],
+    nature: ["/images/nature1.jpg", "/images/nature2.jpg", "/images/nature3.jpg"],
     ai: ["/images/ai1.jpg", "/images/ai2.jpeg", "/images/ai3.jpeg"],
-    handdrawn: [
-      "/images/drawn1.jpg",
-      "/images/drawn2.jpg",
-      "/images/drawn3.jpg",
-    ],
+    handdrawn: ["/images/drawn1.jpg", "/images/drawn2.jpg", "/images/drawn3.jpg"],
   };
 
   const getImagesToDisplay = () => {
-    return screenWidth < 768
-      ? imagesets[hoveredCategory].slice(0, 2)
-      : imagesets[hoveredCategory];
+    return screenWidth < 768 ? imagesets[hoveredCategory].slice(0, 2) : imagesets[hoveredCategory];
   };
 
   return (
-    <div
-      className="flex flex-col lg:flex-row px-[5vw] h-[80vh] py-5 
-    
-    
-      lg:px-[5vw] 
-      xl:flex xl:justify-center
-    
-    text-black gap-4"
-    >
-      {/* Right: Category List (On top for mobile, left for larger screens) */}
-      <div
-        className="
-      
-     xl:flex 
-     2xl:h-auto 2xl:w-auto 2xl:ml-5
-      
-      flex flex-col items-center lg:items-end
-      lg:ml-[1vw]
-       text-lg font-sans order-1 "
-      >
+    <div className="flex flex-col lg:flex-row px-[8vw] h-auto py-10 lg:items-center text-black gap-8">
+      {/* Category List */}
+      <div className="flex flex-col items-center lg:items-start lg:w-1/3">
         {["nature", "ai", "handdrawn"].map((category) => (
           <p
             key={category}
-            className="text-gray-400 text-lg hover:text-black hover:font-bold hover:before:content-['→'] hover:before:mr-2 transition-all duration-300 cursor-pointer"
+            className={`text-gray-500 text-xl font-medium transition-all duration-300 cursor-pointer 
+              ${hoveredCategory === category ? "text-black font-bold" : ""}`}
             onMouseEnter={() => setHoveredCategory(category)}
           >
-            {category === "nature"
-              ? "Nature Images"
-              : category === "ai"
-              ? "AI Images"
-              : "Hand Draw"}
+            {category === "nature" ? "Nature Images" : category === "ai" ? "AI Images" : "Hand-Drawn Art"}
           </p>
         ))}
       </div>
 
-      {/* Left: Image Gallery (Below text in mobile, right in larger screens) */}
-      <div className="flex gap-3 flex-wrap justify-center lg:justify-start lg:space-x-4 order-2 lg:order-none">
+      {/* Image Gallery */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 w-full lg:w-2/3">
         {getImagesToDisplay().map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`${hoveredCategory} ${index + 1}`}
-            className="w-[40vw] h-[50vw]
-            
-            sm:w-[40vw] sm:h-[50vw]
-             md:w-[28vw]  md:h-[40vw]
-             lg:w-[23vw]   lg:h-[30vw]
-             xl:w-[24vw] xl:h-[28vw]
-             2xl:w-[24vw] 2xl:h-[28vw]
-              rounded-2xl object-cover transition-transform duration-300 hover:scale-105"
-          />
+          <div key={index} className="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4]">
+            <img
+              src={image}
+              alt={`${hoveredCategory} ${index + 1}`}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span className="text-white font-medium text-sm sm:text-base">
+                {hoveredCategory} {index + 1}
+              </span>
+            </div>
+          </div>
         ))}
       </div>
     </div>
