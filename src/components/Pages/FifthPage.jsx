@@ -7,14 +7,14 @@ export const FifthPage = () => {
         {/* Top Section */}
         <section className="mb-20 md:mb-28">
           {/* Title */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center text-[#F3F4F6] mb-10">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-barlow font-bold text-center text-[#F3F4F6] mb-10">
             Crafting Pixel Perfect Digital Experiences
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left Section */}
             <div className="text-center lg:text-left">
-              <h3 className="text-2xl lg:text-3xl font-semibold text-blue-400 mb-8">
+              <h3 className="text-2xl lg:text-3xl font-barlow font-medium text-blue-400 mb-8">
                 Bringing Creative Visions to Life with Stunning Visuals
               </h3>
 
@@ -26,7 +26,8 @@ export const FifthPage = () => {
                     <div className="w-4 h-4 rounded-full bg-blue-500 mr-4 shadow"></div>
                     <div>
                       <h4 className="font-semibold text-white">Early Stage Innovation</h4>
-                      <p className="text-gray-300 text-sm sm:text-base mt-1">
+                      <p className="font-barlow font-light
+                      text-gray-300 text-sm sm:text-base mt-1">
                         We transformed initial concepts into visually compelling digital experiences, focusing on user-centric design.
                       </p>
                     </div>
@@ -38,7 +39,8 @@ export const FifthPage = () => {
                     <div className="w-4 h-4 rounded-full bg-blue-500 mr-4 shadow"></div>
                     <div>
                       <h4 className="font-semibold text-white">Expanding Horizons</h4>
-                      <p className="text-gray-300 text-sm sm:text-base mt-1">
+                      <p className="font-barlow font-light
+                      text-gray-300 text-sm sm:text-base mt-1">
                         Venturing into futuristic design and AI-driven interactions to create deeper and more engaging user experiences.
                       </p>
                     </div>
@@ -103,7 +105,7 @@ export const FifthPage = () => {
 
           {/* Right Text Section */}
           <div className="text-center lg:text-left order-1 lg:order-2">
-            <h3 className="text-2xl lg:text-3xl font-semibold text-blue-400 mb-8">
+            <h3 className="text-2xl lg:text-3xl font-barlow font-medium text-blue-400 mb-8">
               Revolutionizing Digital Experiences for Lasting Impact
             </h3>
 
@@ -113,7 +115,8 @@ export const FifthPage = () => {
                 <div className="flex items-center">
                   <div className="w-4 h-4 rounded-full bg-blue-500 mr-4 shadow"></div>
                   <div>
-                    <p className="text-lg text-gray-300 sm:text-xl leading-relaxed">
+                    <p className="font-barlow font-light
+                    text-lg text-gray-300 sm:text-xl leading-relaxed">
                       We craft immersive digital experiences that not only elevate your artistic journey but also deeply resonate with and engage your target audience.
                     </p>
                   </div>

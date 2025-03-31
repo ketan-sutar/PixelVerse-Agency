@@ -46,7 +46,7 @@ const ExploreButton = () => {
       {/* Spotlight Effect */}
       <div
         ref={spotlightRef}
-        className="button__spotlight absolute top-1/2 left-0 w-1 h-1 bg-black rounded-full opacity-50"
+        className="button__spotlight absolute top-1/2 left-0 w-1 h-1 bg-[#F37199] text-white rounded-full opacity-50"
       ></div>
 
       

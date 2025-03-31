@@ -19,7 +19,7 @@ const InfiniteScroll = () => {
   return (
     <section className="w-full px-4 sm:px-6 py-8 md:py-12">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[#93C5FD] mb-8 md:mb-12">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-barlow font-bold text-center text-[#93C5FD] mb-8 md:mb-12">
         Dreamscapes in Motion
       </h1>
 
@@ -42,11 +42,7 @@ const InfiniteScroll = () => {
               </div>
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-end p-4">
-                <p className="text-white text-xs sm:text-sm md:text-base font-medium w-full text-center transform translate-y-5 group-hover:translate-y-0 transition-transform duration-300">
-                  {file.text}
-                </p>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-white/15 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-end p-4"></div>
             </div>
           ))}
           speed={10}
