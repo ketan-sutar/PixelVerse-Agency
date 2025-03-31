@@ -11,9 +11,9 @@ const SecondPage = () => {
   }, []);
 
   const imagesets = {
-    nature: ["/images/nature1.jpg", "/images/nature2.jpg", "/images/nature3.jpg"],
-    ai: ["/images/ai1.jpg", "/images/ai2.jpeg", "/images/ai3.jpeg"],
-    handdrawn: ["/images/drawn1.jpg", "/images/drawn2.jpg", "/images/drawn3.jpg"],
+    nature: ["/public/images/nature1.webp", "/images/nature2.webp", "/images/nature3.webp"],
+    ai: ["/images/ai1.webp", "/images/ai2.webp", "/images/ai3.webp"],
+    handdrawn: ["/images/drawn1.webp", "/images/drawn2.webp", "/images/drawn3.webp"],
   };
 
   const getImagesToDisplay = () => {

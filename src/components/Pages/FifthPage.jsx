@@ -53,21 +53,21 @@ export const FifthPage = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               <div className="relative rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
                 <img
-                  src="/images/4.1img.jpg"
+                  src="/images/4.1img.webp"
                   alt="Artistic Design"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
                 <img
-                  src="/images/4.2img.jpg"
+                  src="/images/4.2img.webp"
                   alt="Digital Artwork"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hidden md:block">
                 <img
-                  src="/images/4.3img.jpg"
+                  src="/images/4.3img.webp"
                   alt="Abstract Art"
                   className="w-full h-full object-cover"
                 />
@@ -82,21 +82,21 @@ export const FifthPage = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 order-2 lg:order-1">
             <div className="relative rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
               <img
-                src="/images/5.1img.jpg"
+                src="/images/5.1img.webp"
                 alt="Creative Collaboration"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
               <img
-                src="/images/5.2img.jpg"
+                src="/images/5.2img.webp"
                 alt="Innovative Solutions"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hidden md:block">
               <img
-                src="/images/5.3img.jpg"
+                src="/images/5.3img.webp"
                 alt="Exceptional Results"
                 className="w-full h-full object-cover"
               />

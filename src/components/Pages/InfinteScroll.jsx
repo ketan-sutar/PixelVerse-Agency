@@ -3,17 +3,17 @@ import InfiniteScroller from "./InfiniteScroller";
 
 const InfiniteScroll = () => {
   const imageFiles = [
-    { src: "/slideimages/slide1.jpg", text: "Beautiful Landscape 1" },
-    { src: "/slideimages/slide2.jpg", text: "Peaceful Sunset" },
-    { src: "/slideimages/slide3.jpg", text: "Mystic Mountains" },
-    { src: "/slideimages/slide4.jpg", text: "Cityscape at Night" },
-    { src: "/slideimages/slide5.jpg", text: "Serene Beach" },
-    { src: "/slideimages/slide7.jpg", text: "Snowy Peaks" },
-    { src: "/slideimages/slide8.jpg", text: "Golden Fields" },
-    { src: "/slideimages/slide9.jpg", text: "Forest Trail" },
-    { src: "/slideimages/slide10.jpg", text: "Rolling Hills" },
-    { src: "/slideimages/slide11.jpg", text: "Ocean Waves" },
-    { src: "/slideimages/slide15.jpg", text: "Sunset Over Water" },
+    { src: "/slideimages/slide1.webp", text: "Beautiful Landscape 1" },
+    { src: "/slideimages/slide2.webp", text: "Peaceful Sunset" },
+    { src: "/slideimages/slide3.webp", text: "Mystic Mountains" },
+    { src: "/slideimages/slide4.webp", text: "Cityscape at Night" },
+    { src: "/slideimages/slide5.webp", text: "Serene Beach" },
+    { src: "/slideimages/slide7.webp", text: "Snowy Peaks" },
+    { src: "/slideimages/slide8.webp", text: "Golden Fields" },
+    { src: "/slideimages/slide9.webp", text: "Forest Trail" },
+    { src: "/slideimages/slide10.webp", text: "Rolling Hills" },
+    { src: "/slideimages/slide11.webp", text: "Ocean Waves" },
+    { src: "/slideimages/slide15.webp", text: "Sunset Over Water" },
   ];
 
   return (

@@ -72,17 +72,17 @@ const ThirdPage = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               {[
                 {
-                  src: "/images/2.1img.jpg",
+                  src: "/images/2.1img.webp",
                   alt: "Artistic Design",
                   aspect: "aspect-[3/4]",
                 },
                 {
-                  src: "/images/2.2img.jpg",
+                  src: "/images/2.2img.webp",
                   alt: "Digital Artwork",
                   aspect: "aspect-[3/4]",
                 },
                 {
-                  src: "/images/2.3img.jpg",
+                  src: "/images/2.3img.webp",
                   alt: "Abstract Art",
                   aspect: "aspect-[3/4]",
                   className: "hidden md:block",
