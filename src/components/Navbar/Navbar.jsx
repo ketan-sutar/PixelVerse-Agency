@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="bg-[#0B0C10] shadow-lg">
       <div className="container mx-auto px-[4.5vw] py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold text-[#F3F4F6]">PɪxᴇʟVᴇʀsᴇ</div>
+        <div className="text-3xl font-jersey text-[#F3F4F6]">PɪxᴇʟVᴇʀsᴇ</div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">

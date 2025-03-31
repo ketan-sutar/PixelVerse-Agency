@@ -16,8 +16,10 @@ const DefaultLayout = () => {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[6vw] font-bold font-serif tracking-tighter bg-clip-text text-transparent              text-transparent bg-clip-text bg-gradient-to-r from-[#6A0DAD] to-[#E75480]
- bg-size-200 animate-text-gradient"
+          className="text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[6vw]  tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#6A0DAD] to-[#E75480]
+ bg-size-200 animate-text-gradient
+ font-kanit font-normal
+ "
         >
           PixelVerse
         </motion.h1>
@@ -30,7 +32,7 @@ const DefaultLayout = () => {
           className="relative flex items-center justify-center"
         >
           <div className="hidden md:block w-16 h-px bg-gradient-to-r from-transparent to-[#38BDF8] mr-4" />
-          <p className="text-[4vw] sm:text-[3.5vw] md:text-[2.5vw] lg:text-[1.5vw] font-medium font-sans leading-tight text-white uppercase tracking-widest">
+          <p className="text-[4vw] sm:text-[3.5vw] md:text-[2.5vw] lg:text-[1.5vw] font-medium font-barlow leading-tight text-white uppercase tracking-widest">
             Crafting Immersive Visual Experiences
           </p>
           <div className="hidden md:block w-16 h-px bg-gradient-to-l from-transparent to-[#38BDF8] ml-4" />
@@ -41,7 +43,7 @@ const DefaultLayout = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-[3.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.1vw] font-light font-sans text-[#93C5FD]/80 max-w-3xl mx-auto leading-relaxed"
+          className="text-[3.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.1vw] font-light font-barlow text-[#93C5FD]/80 max-w-3xl mx-auto leading-relaxed"
         >
           We specialize in{" "}
           <span className="text-[#38BDF8] font-medium">
@@ -60,7 +62,7 @@ const DefaultLayout = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
           whileHover={{ scale: 1.02 }}
-          className="text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[6vw] font-bold font-serif tracking-tighter mt-8 md:mt-12             text-transparent bg-clip-text bg-gradient-to-l from-[#6A0DAD] to-[#E75480]
+          className="text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[6vw]  font-kanit font-normal tracking-tighter mt-8 md:mt-12             text-transparent bg-clip-text bg-gradient-to-l from-[#6A0DAD] to-[#E75480]
    relative inline-block group"
         >
           Agency
